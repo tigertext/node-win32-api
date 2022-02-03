@@ -1,3 +1,5 @@
+Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-api) to upgrade ffi-napi to `4.y.z`.
+
 # win32-api
 
 FFI Definitions of Windows win32 api for [node-ffi-napi]

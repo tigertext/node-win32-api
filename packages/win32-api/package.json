@@ -1,7 +1,7 @@
 {
-  "name": "win32-api",
+  "name": "tt-win32-api",
   "author": "waiting",
-  "version": "9.6.0",
+  "version": "10.0.0",
   "description": "FFI definitions of windows win32 api for node-ffi",
   "keywords": [
     "windows",
@@ -33,7 +33,7 @@
     "@types/ffi-napi": "*",
     "@types/ref-napi": "^1.4.0",
     "@types/ref-union-di": "^1.0.0",
-    "ffi-napi": "^3.0.0",
+    "ffi-napi": "^4.0.3",
     "ref-napi": "^2.0.0",
     "ref-union-di": "^1.0.1",
     "win32-def": "^9.4.0"
