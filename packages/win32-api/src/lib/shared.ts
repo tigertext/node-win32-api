@@ -4,4 +4,4 @@ import * as _UnionDi from 'ref-union-di'
 
 const UnionDi = _UnionDi
 
-export const Union = UnionDi(ref as unknown as Parameters<typeof _UnionDi>[0])
+export const Union = UnionDi(ref)

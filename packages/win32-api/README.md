@@ -1,4 +1,9 @@
-Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-api) to upgrade ffi-napi to `4.y.z`.
+Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-api). Changes:
+* Update `ffi-napi` to `^4.0.3`
+* Update `ref-napi` to `^3.0.3`
+* Update `@types/ref-napi` to `^3.0.4`
+* Pin `@types/ref-struct-di` to `1.1.0` since `1.1.6` doesn't seem to work well
+* Require node 14.16.0
 
 # win32-api
 
