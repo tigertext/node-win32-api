@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { basename } from '@waiting/shared-core'
 import * as assert from 'power-assert'
+import rewire = require('rewire')
 
 import {
   settingsDefault,
@@ -20,7 +21,6 @@ import { macroMap } from '../src/lib/marcomap'
 import * as WD from '../src/lib/windef'
 
 
-import rewire = require('rewire')
 
 
 const filename = basename(__filename)

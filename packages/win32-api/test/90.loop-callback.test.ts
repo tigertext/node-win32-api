@@ -60,7 +60,7 @@ describe.skip(filename, () => {
         (index) => {
           assert(index + 1 <= loops, `index(${index}) exceed loops(${loops})`)
         },
-        err => assert(false, err),
+        (err: string | undefined) => assert(false, err),
         () => {
           const end = new Date().getTime()
           const delta = end - start

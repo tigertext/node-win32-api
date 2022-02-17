@@ -59,7 +59,7 @@ describe(filename, () => {
     )
       .subscribe(
         () => { void 0 },
-        (err) => {
+        (err: string | undefined) => {
           assert(false, err)
           child.kill()
           done()

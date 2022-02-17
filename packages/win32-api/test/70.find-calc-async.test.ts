@@ -82,7 +82,7 @@ describe(filename, () => {
           child.kill()
           done()
         })
-        .catch((err) => {
+        .catch((err: string | undefined) => {
           assert(false, err)
           child.kill()
           done()
@@ -100,7 +100,7 @@ describe(filename, () => {
           child.kill()
           done()
         })
-        .catch((err) => {
+        .catch((err: string | undefined) => {
           assert(false, err)
           child.kill()
           done()

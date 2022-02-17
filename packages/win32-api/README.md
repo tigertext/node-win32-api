@@ -4,6 +4,7 @@ Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-a
 * Update `@types/ref-napi` to `^3.0.4`
 * Pin `@types/ref-struct-di` to `1.1.0` since `1.1.6` doesn't seem to work well
 * Require node 14.16.0
+* Upgrade eslint config and fix lint errors
 
 # win32-api
 
