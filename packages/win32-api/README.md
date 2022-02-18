@@ -4,7 +4,7 @@ Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-a
 * Update `@types/ref-napi` to `^3.0.4`
 * Pin `@types/ref-struct-di` to `1.1.0` since `1.1.6` doesn't seem to work well
 * Use `@tigerconnect/ref-union-di` fork instead of `ref-union-di` to fix some CommonJS problems
-* Require node 14.16.0
+* Require node 17.5.0 due to [stacktraces in node v16 and earlier](https://github.com/node-ffi-napi/ref-napi/issues/54#issuecomment-1009940294)
 * Upgrade eslint config and fix lint errors
 
 # win32-api
