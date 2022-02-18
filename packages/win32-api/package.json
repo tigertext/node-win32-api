@@ -26,7 +26,7 @@
   "homepage": "https://waitingsong.github.io/node-win32-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waitingsong/node-win32-api.git"
+    "url": "git+https://github.com/tigertext/node-win32-api.git"
   },
   "license": "MIT",
   "dependencies": {

@@ -1,3 +1,5 @@
+Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-api). The list of changes is available in the [module-level README](./packages/win32-api/README.md).
+
 # win32-api
 
 FFI Definitions of Windows win32 api for [node-ffi-napi]
@@ -32,7 +34,7 @@ Calling win32 native functions come from user32.dll, kernel32.dll, comctl32.dll 
 
 ## Installing
 ```sh
-npm install win32-api
+npm install @tigerconnect/win32-api
 ```
 
 
@@ -48,7 +50,7 @@ npm install win32-api
  * K, Kernel32 for kernel32 from lib/kernel32/api
  * U, User32 for user32 from lib/user32/api
  */
-import { K, U } from 'win32-api'
+import { K, U } from '@tigerconnect/win32-api'
 import * as ref from 'ref-napi'
 
 const knl32 = K.load()
@@ -81,7 +83,7 @@ if (typeof hWnd === 'number' && hWnd > 0
 
 ### [Ref](https://www.npmjs.com/package/ref-napi)
 ```ts
-import { U } from 'win32-api'
+import { U } from '@tigerconnect/win32-api'
 import * as ref from 'ref-napi'
 
 // so we can all agree that a buffer with the int value written
@@ -103,7 +105,7 @@ console.log(ref.deref(buf))  // ← 12345
 // use of types and windef:
 
 import * as ref from 'ref-napi'
-import { K, DTypes as W } from 'win32-api'
+import { K, DTypes as W } from '@tigerconnect/win32-api'
 
 
 const knl32 = K.load()
@@ -123,7 +125,7 @@ console.log(hInstanceBuffer.readBigUInt64LE())  // -> 140734814748672n (7FFF60A4
 ```ts
 // struct usage with ref-struct
 import * as Struct from 'ref-struct'
-import { DModel as M, DStruct as DS } from 'win32-api'
+import { DModel as M, DStruct as DS } from '@tigerconnect/win32-api'
 
 // https://msdn.microsoft.com/en-us/library/windows/desktop/dd162805(v=vs.85).aspx
 const point: M.POINT_Struct = new Struct(DS.POINT)()
@@ -134,7 +136,7 @@ console.log(point)
 // struct usage with ref-struct-di
 import * as ref from 'ref-napi'
 import * as StructDi from 'ref-struct-di'
-import { DModel as M, DStruct as DS } from 'win32-api'
+import { DModel as M, DStruct as DS } from '@tigerconnect/win32-api'
 
 const Struct = StructDi(ref)
 const point: M.POINT_Struct = new Struct(DS.POINT)()
@@ -150,7 +152,7 @@ import * as Struct from 'ref-struct-napi'
 import {
   DModel as M,
   DStructExt,
-} from 'win32-api'
+} from '@tigerconnect/win32-api'
 
 
 // https://docs.microsoft.com/zh-cn/windows/win32/api/wingdi/ns-wingdi-display_devicew 
@@ -168,7 +170,7 @@ https://github.com/waitingsong/node-win32-api/blob/master/packages/win32-api/tes
 ```ts
 // **Find calc's hWnd, need running a calculator program manually at first**
 
-import { U } from 'win32-api'
+import { U } from '@tigerconnect/win32-api'
 import * as ref from 'ref-napi'
 
 
