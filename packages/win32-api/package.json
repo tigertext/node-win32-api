@@ -64,9 +64,6 @@
     "tsc": "tsc -p tsconfig.json",
     "tsc:w": "tsc -p tsconfig.json -w"
   },
-  "os": [
-    "win32"
-  ],
   "nyc": {
     "include": [
       "src/**/*.ts"
