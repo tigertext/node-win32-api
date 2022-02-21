@@ -1,7 +1,7 @@
 {
   "name": "@tigerconnect/win32-api",
   "author": "waiting",
-  "version": "9.6.0-tc4",
+  "version": "9.6.0-tc5",
   "description": "FFI definitions of windows win32 api for node-ffi",
   "keywords": [
     "windows",
