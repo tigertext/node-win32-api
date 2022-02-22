@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import * as ref from '@tigerconnect/ref-napi'
 import { UnionDi } from '@tigerconnect/ref-union-di'
 import * as ffi from 'ffi-napi'
-import * as ref from 'ref-napi'
 import * as StructDi from 'ref-struct-di'
 import { of, Observable } from 'rxjs'
 import {

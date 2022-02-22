@@ -2,8 +2,8 @@
 import { spawn } from 'child_process'
 import { basename } from 'path'
 
+import * as ref from '@tigerconnect/ref-napi'
 import * as assert from 'power-assert'
-import * as ref from 'ref-napi'
 import {
   DModel as M,
   DStruct as DS,

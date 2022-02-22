@@ -51,7 +51,7 @@ npm install @tigerconnect/win32-api
  * U, User32 for user32 from lib/user32/api
  */
 import { K, U } from '@tigerconnect/win32-api'
-import * as ref from 'ref-napi'
+import * as ref from '@tigerconnect/ref-napi'
 
 const knl32 = K.load()
 const user32 = U.load()  // load all apis defined in lib/{dll}/api from user32.dll
@@ -84,7 +84,7 @@ if (typeof hWnd === 'number' && hWnd > 0
 ### [Ref](https://www.npmjs.com/package/ref-napi)
 ```ts
 import { U } from '@tigerconnect/win32-api'
-import * as ref from 'ref-napi'
+import * as ref from '@tigerconnect/ref-napi'
 
 // so we can all agree that a buffer with the int value written
 // to it could be represented as an "int *"
@@ -104,7 +104,7 @@ console.log(ref.deref(buf))  // ← 12345
 ```ts
 // use of types and windef:
 
-import * as ref from 'ref-napi'
+import * as ref from '@tigerconnect/ref-napi'
 import { K, DTypes as W } from '@tigerconnect/win32-api'
 
 
@@ -134,7 +134,7 @@ point.y = 200
 console.log(point)
 
 // struct usage with ref-struct-di
-import * as ref from 'ref-napi'
+import * as ref from '@tigerconnect/ref-napi'
 import * as StructDi from 'ref-struct-di'
 import { DModel as M, DStruct as DS } from '@tigerconnect/win32-api'
 
@@ -171,7 +171,7 @@ https://github.com/waitingsong/node-win32-api/blob/master/packages/win32-api/tes
 // **Find calc's hWnd, need running a calculator program manually at first**
 
 import { U } from '@tigerconnect/win32-api'
-import * as ref from 'ref-napi'
+import * as ref from '@tigerconnect/ref-napi'
 
 
 const u32 = U.load(['FindWindowExW', 'SetWindowTextW'])

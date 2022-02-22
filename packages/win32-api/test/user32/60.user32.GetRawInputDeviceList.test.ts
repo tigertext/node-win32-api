@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { basename } from 'path'
 
+import * as ref from '@tigerconnect/ref-napi'
 import * as ffi from 'ffi-napi'
 import * as assert from 'power-assert'
-import * as ref from 'ref-napi'
 import {
   DModel as M,
   DStruct as DS,
