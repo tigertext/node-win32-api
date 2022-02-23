@@ -1,8 +1,8 @@
 import { spawn, ChildProcess } from 'child_process'
 import { basename } from 'path'
 
+import * as ffi from '@tigerconnect/ffi-napi'
 import * as ref from '@tigerconnect/ref-napi'
-import * as ffi from 'ffi-napi'
 import * as assert from 'power-assert'
 import { of } from 'rxjs'
 import { delay, tap } from 'rxjs/operators'

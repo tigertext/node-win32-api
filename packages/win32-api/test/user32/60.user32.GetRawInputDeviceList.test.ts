@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { basename } from 'path'
 
+import * as ffi from '@tigerconnect/ffi-napi'
 import * as ref from '@tigerconnect/ref-napi'
-import * as ffi from 'ffi-napi'
 import * as assert from 'power-assert'
 import {
   DModel as M,
@@ -35,4 +35,3 @@ describe(filename, () => {
     assert(nDevices > 0 && nDevices <= limit)
   })
 })
-

@@ -249,7 +249,7 @@ Check out [node-gyp] and [windows-build-tools]
 
 [node-gyp]: https://github.com/nodejs/node-gyp
 [windows-build-tools]: https://github.com/felixrieseberg/windows-build-tools
-[node-ffi-napi]: https://github.com/node-ffi-napi/node-ffi-napi
+[node-ffi-napi]: https://github.com/tigertext/node-ffi-napi
 [node-ffi]: https://github.com/node-ffi/node-ffi
 
 [`win32-api`]: https://github.com/waitingsong/node-win32-api/tree/master/packages/win32-api

@@ -30,10 +30,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@tigerconnect/ref-napi": "^4.0.0-tc4",
-    "@tigerconnect/ref-union-di": "^1.0.1-tc12",
-    "@types/ffi-napi": "*",
-    "ffi-napi": "^4.0.3",
+    "@tigerconnect/ffi-napi": "^4.0.3-tc2",
+    "@tigerconnect/ref-napi": "^4.0.0-tc6",
+    "@tigerconnect/ref-union-di": "^1.0.1-tc14",
     "win32-def": "^9.4.0"
   },
   "devDependencies": {

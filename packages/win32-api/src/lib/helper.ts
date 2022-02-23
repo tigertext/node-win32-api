@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import * as ffi from 'ffi-napi'
+import * as ffi from '@tigerconnect/ffi-napi'
 import { Config, FModel } from 'win32-def'
 
 
@@ -86,4 +86,3 @@ function parse_settings(settings?: FModel.LoadSettings): FModel.LoadSettings {
   }
   return st
 }
-

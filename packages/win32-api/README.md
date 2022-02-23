@@ -1,8 +1,8 @@
 Fork of [waitingsong/node-win32-api](https://github.com/waitingsong/node-win32-api). Changes:
-* Update `ffi-napi` to `^4.0.3`
 * Replace `ref-napi` and `@types/ref-napi` with `@tigerconnect/ref-napi` for node v16 support, due to [stacktraces in node v14 - v16 with ref-napi](https://github.com/node-ffi-napi/ref-napi/issues/54#issuecomment-1009940294)
-* Pin `@types/ref-struct-di` to `1.1.0` since `1.1.6` doesn't seem to work well
+* Use `@tigerconnect/ffi-napi` fork instead of `ffi-napi` for the same reason
 * Use `@tigerconnect/ref-union-di` fork instead of `ref-union-di` to fix some CommonJS problems
+* Pin `@types/ref-struct-di` to `1.1.0` since `1.1.6` doesn't seem to work well
 * Remove OS requirement from win32-api package.json so we can still get access to types and APIs for test mocks
 * Require node 14.16.0 or higher
 * Upgrade eslint config and fix lint errors
@@ -256,7 +256,7 @@ Check out [node-gyp] and [windows-build-tools]
 
 [node-gyp]: https://github.com/nodejs/node-gyp
 [windows-build-tools]: https://github.com/felixrieseberg/windows-build-tools
-[node-ffi-napi]: https://github.com/node-ffi-napi/node-ffi-napi
+[node-ffi-napi]: https://github.com/tigertext/node-ffi-napi
 [node-ffi]: https://github.com/node-ffi/node-ffi
 
 [`win32-api`]: https://github.com/waitingsong/node-win32-api/tree/master/packages/win32-api
